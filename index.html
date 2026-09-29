@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday, My Love! ❤️</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Floating Hearts Background Canvas -->
+  <canvas id="canvas-bg"></canvas>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">Happy Birthday <span id="nav-name">My Queen</span> ✨</div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#gallery">Memories</a></li>
+      <li><a href="#reasons">Why I Love You</a></li>
+      <li><a href="#cake">Make a Wish</a></li>
+      <li><a href="#letter">Love Letter</a></li>
+    </ul>
+    <button id="music-toggle" class="btn-icon">🎵 Music off</button>
+<!-- Background Music Element -->
+<audio id="bg-music"></audio>
+
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
+    <div class="hero-content">
+      <div class="hero-img-container">
+        <img id="hero-img" src="emmy/e4.jpeg" alt="Her Photo">
+        <input type="file" id="upload-hero-img" accept="image/*" class="file-input">
+      </div>
+      <h1 class="glow-text">Happy Birthday, <span id="gf-name">My Love</span>! ❤️</h1>
+      <p class="hero-subtitle">Today is all about celebrating the most beautiful person in my life.</p>
+      
+           
+    </div>
+  </section>
+<div class="hero-badges">
+  <span class="badge">👑 Birthday Queen</span>
+  <span class="badge">💖 My Whole World</span>
+  <span class="badge">🎉 Celebrating You</span>
+</div>
+
+  <!-- Photo Gallery Section -->
+  <section id="gallery" class="section">
+    <h2 class="section-title">Our Favorite Memories 📸</h2>
+    <div class="gallery-grid">
+      
+      <!-- Card 1 -->
+      <div class="gallery-card">
+        <div class="img-wrapper">
+          <img id="e1" src="emmy/e1.jpeg">
+          <input type="file" id="upload-gal-1" accept="image/*" class="file-input">
+        </div>
+        <p class="caption">That smile that melts my heart every single time. ✨</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="gallery-card">
+        <div class="img-wrapper">
+          <img id="gal-img-2" src="emmy/e2.jpeg" alt="Memory 2">
+          <input type="file" id="upload-gal-2" accept="image/*" class="file-input">
+        </div>
+        <p class="caption">Forever my favorite person to go on adventures with. 🌍</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="gallery-card">
+        <div class="img-wrapper">
+          <img id="gal-img-3" src="emmy/e3.jpeg"alt="Memory 3">
+          <input type="file" id="upload-gal-3" accept="image/*" class="file-input">
+        </div>
+        <p class="caption">Your laughter is my favorite sound in the world. 😊</p>
+      </div>
+<!-- Card 4 -->
+      <div class="gallery-card">
+        <div class="img-wrapper">
+          <img id="gal-img-4" src="emmy/e5.jpeg" alt="Memory 4">
+          <input type="file" id="upload-gal-4" accept="image/*" class="file-input">
+        </div>
+        <p class="caption">A beautiful moment I will treasure forever. ❤️</p>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="gallery-card">
+        <div class="img-wrapper">
+          <img id="gal-img-5" src="emmy/e6.jpeg" alt="Memory 5">
+          <input type="file" id="upload-gal-5" accept="image/*" class="file-input">
+        </div>
+        <p class="caption">Looking at you makes every day brighter. 🌟</p>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="gallery-card">
+        <div class="img-wrapper">
+          <img id="gal-img-6" src="emmy/e7.jpeg" alt="Memory 6">
+          <input type="file" id="upload-gal-6" accept="image/*" class="file-input">
+        </div>
+        <p class="caption">My favorite memory with my favorite person. 🥰</p>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="gallery-card">
+        <div class="img-wrapper">
+          <img id="gal-img-7" src="emmy/e8.jpeg" alt="Memory 7">
+          <input type="file" id="upload-gal-7" accept="image/*" class="file-input">
+        </div>
+        <p class="caption">Thank you for making my life so sweet. 🍩</p>
+      </div>
+
+      <!-- Card 8 -->
+      <div class="gallery-card">
+        <div class="img-wrapper">
+          <img id="gal-img-8" src="emmy/e15.jpeg" alt="Memory 8">
+          <input type="file" id="upload-gal-8" accept="image/*" class="file-input">
+        </div>
+        <p class="caption">You look stunning in every single photo! 📸</p>
+      </div>
+
+      <!-- Card 9 -->
+      <div class="gallery-card">
+        <div class="img-wrapper">
+          <img id="gal-img-9" src="emmy/e16.jpeg" alt="Memory 9">
+          <input type="file" id="upload-gal-9" accept="image/*" class="file-input">
+        </div>
+        <p class="caption">Here is to creating a million more memories together. 🥂</p>
+      </div>
+
+      <!-- Card 10 -->
+      <div class="gallery-card">
+        <div class="img-wrapper">
+          <img id="gal-img-10" src="emmy/e17.jpeg" alt="Memory 10">
+          <input type="file" id="upload-gal-10" accept="image/*" class="file-input">
+        </div>
+        <p class="caption">Forever and always, my love! 💕</p>
+      </div>s
+<!-- Video Card 1 -->
+      <div class="gallery-card">
+        <div class="img-wrapper">
+          <video id="gal-vid-1" controls autoplay loop muted style="width:100%; height:100%; object-fit:cover;">
+            <source src="emmy/e9.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <input type="file" id="upload-gal-vid-1" accept="video/*" class="file-input">
+        </div>
+        <p class="caption">I love your laugh in this clip! 😄✨</p>
+      </div>
+
+      <!-- Video Card 2 -->
+      <div class="gallery-card">
+        <div class="img-wrapper">
+          <video id="gal-vid-2" controls autoplay loop muted style="width:100%; height:100%; object-fit:cover;">
+            <source src="emmy/e10.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <input type="file" id="upload-gal-vid-2" accept="video/*" class="file-input">
+        </div>
+        <p class="caption">Our cutest video together! 🎥❤️</p>
+      </div>
+
+      <!-- Video Card 3 -->
+      <div class="gallery-card">
+        <div class="img-wrapper">
+          <video id="gal-vid-3" controls autoplay loop muted style="width:100%; height:100%; object-fit:cover;">
+            <source src="emmy/e11.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <input type="file" id="upload-gal-vid-3" accept="video/*" class="file-input">
+        </div>
+        <p class="caption">Best memory ever! 🥳🎉</p>
+      </div>
+
+      <!-- Video Card 4 -->
+      <div class="gallery-card">
+        <div class="img-wrapper">
+          <video id="gal-vid-4" controls autoplay loop muted style="width:100%; height:100%; object-fit:cover;">
+            <source src="emmy/e12.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <input type="file" id="upload-gal-vid-4" accept="video/*" class="file-input">
+        </div>
+        <p class="caption">Always having fun with you! 🥰💃</p>
+      </div>
+
+      <!-- Video Card 5 -->
+      <div class="gallery-card">
+        <div class="img-wrapper">
+          <video id="gal-vid-5" controls autoplay loop muted style="width:100%; height:100%; object-fit:cover;">
+            <source src="emmy/e13.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <input type="file" id="upload-gal-vid-5" accept="video/*" class="file-input">
+        </div>
+        <p class="caption">My favorite person in the whole world! 🌍💕</p>
+      </div>
+
+      <!-- Video Card 6 -->
+      <div class="gallery-card">
+        <div class="img-wrapper">
+          <video id="gal-vid-6" controls autoplay loop muted style="width:100%; height:100%; object-fit:cover;">
+            <source src="emmy/e14.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <input type="file" id="upload-gal-vid-6" accept="video/*" class="file-input">
+        </div>
+        <p class="caption">To forever with you! 🥂❤️</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reasons Why I Love You Section -->
+  <section id="reasons" class="section alt-bg">
+    <h2 class="section-title">Reasons Why I Love You 💖</h2>
+    <div class="cards-grid">
+      <div class="love-card">
+        <div class="card-icon">🌟</div>
+        <h3>Your Kind Heart</h3>
+        <p>You always care so deeply for everyone around you. Your compassion is endless.</p>
+      </div>
+      <div class="love-card">
+        <div class="card-icon">😄</div>
+        <h3>Your Gorgeous Smile</h3>
+        <p>No matter how dark the day gets, one look at your smile lights up my entire world.</p>
+      </div>
+      <div class="love-card">
+        <div class="card-icon">🤗</div>
+        <h3>Your Comfort</h3>
+        <p>Being with you feels like home. You are my safe space and my best friend.</p>
+      </div>
+<!-- Reason 4 -->
+<div class="reason-card">
+  <div class="reason-icon">✨</div>
+  <h3>Your Cute Habits</h3>
+  <p>From the little expressions you make to the way you laugh at silly jokes, every small detail about you is completely adorable to me.</p>
+</div>
+
+<!-- Reason 5 -->
+<div class="reason-card">
+  <div class="reason-icon">👑</div>
+  <h3>How You Support Me</h3>
+  <p>You are my biggest cheerleader. You always believe in my dreams and push me to be better, even on days when I doubt myself.</p>
+</div>
+
+<!-- Reason 6 -->
+<div class="reason-card">
+  <div class="reason-icon">💖</div>
+  <h3>Our Special Connection</h3>
+  <p>The way we can communicate with just a single look or share non-stop laughter over nothing at all is something I wouldn't trade for the world.</p>
+</div>
+<!-- Reason 7 -->
+<div class="reason-card">
+  <div class="reason-icon">🧸</div>
+  <h3>Your Gentle Warmth</h3>
+  <p>Just being around you calms my mind. You have this beautiful way of making even the messiest days feel instantly peaceful and okay.</p>
+</div>
+
+<!-- Reason 8 -->
+<div class="reason-card">
+  <div class="reason-icon">🥂</div>
+  <h3>Every Moment With You</h3>
+  <p>Whether we're out on an exciting adventure or just sitting together doing absolutely nothing, time spent with you is always my favorite part of the day.</p>
+</div>
+    </div>
+  </section>
+
+  <!-- Interactive Birthday Cake -->
+  <section id="cake" class="section">
+    <h2 class="section-title">Make a Wish & Blow the Candles! 🕯️</h2>
+    <p class="section-subtitle">Click the candles to blow them out and make your secret wish!</p>
+    
+    <div class="cake-container">
+      <div class="cake">
+        <div class="candle-container">
+          <div class="candle" onclick="extinguishCandle(this)">
+            <div class="flame"></div>
+          </div>
+          <div class="candle" onclick="extinguishCandle(this)">
+            <div class="flame"></div>
+          </div>
+          <div class="candle" onclick="extinguishCandle(this)">
+            <div class="flame"></div>
+          </div>
+        </div>
+        <div class="top-layer"></div>
+        <div class="bottom-layer"></div>
+      </div>
+    </div>
+    <div id="wish-message" class="hidden-message">🎉 May all your dreams and wishes come true, my love! 🎉</div>
+<section id="cake" class="section">
+  <h2 class="section-title">Make a Wish & Blow the Candles! 🎂</h2>
+  <p class="section-subtitle">Click the button to make your secret birthday wish!</p>
+
+  <div class="wish-controls">
+<button id="blow-btn"onclick="blowCandles()" class="glow-btn">Make a Wish & Blow Out!</button>
+    <div class="cake">
+      <!-- Plate -->
+      <div class="plate"></div>
+
+      <!-- Layers -->
+      <div class="layer layer-bottom"></div>
+      <div class="layer layer-middle"></div>
+      <div class="layer layer-top">
+        <div class="icing"></div>
+      </div>
+
+      <!-- Candles -->
+      <div class="candles-container">
+        <div class="candle-item">
+          <div class="flame"></div>
+          <div class="smoke"></div>
+          <div class="sparkles"><span>✨</span><span>💖</span></div>
+        </div>
+        <div class="candle-item">
+          <div class="flame"></div>
+          <div class="smoke"></div>
+          <div class="sparkles"><span>✨</span><span>🌟</span></div>
+        </div>
+        <div class="candle-item">
+          <div class="flame"></div>
+          <div class="smoke"></div>
+          <div class="sparkles"><span>✨</span><span>💖</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Interactive Controls -->
+  <div class="wish-controls">
+    <button id="blow-btn" onclick="blowCandles()" class="glow-btn">
+      💨 Make a Wish & Blow Out!
+    </button>
+
+    <div id="wish-message" class="wish-card" style="display: none;">
+      <h3>✨ Your Wish Is Saved in My Heart! ✨</h3>
+      <p>May every single dream you have come true this year, Emmy. I love you endlessly! ❤️</p>
+    </div>
+  </div>
+</section>
+  </section>
+
+  <!-- Love Letter Modal Section -->
+  <section id="letter" class="section alt-bg">
+    <h2 class="section-title">A Special Letter For You ✉️</h2>
+    <div class="envelope-wrapper" onclick="toggleLetter()">
+      <div class="envelope">
+        <div class="heart-seal">❤️</div>
+        <p>Click to Open Your Letter</p>
+      </div>
+    </div>
+
+    <!-- Hidden Letter Content -->
+    <div id="letter-modal" class="modal hidden">
+      <div class="modal-content">
+        <span class="close-btn" onclick="toggleLetter()">&times;</span>
+        <h2 class="letter-title">To My Dearest Love,</h2>
+        <p id="letter-body">
+          Happy Birthday! Words will never be enough to express how thankful I am to have you in my life. 
+          You bring so much joy, warmth, and laughter wherever you go. Today, I want to remind you of how deeply 
+          appreciated and cherished you are. May this year bring you as much happiness as you give to everyone around you. 
+          I love you endlessly! ❤️
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Made with ❤️ forever and always for you.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
