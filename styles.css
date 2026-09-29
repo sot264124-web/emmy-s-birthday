@@ -1,0 +1,566 @@
+/* Styling & Variables */
+:root {
+  --primary: #ff4d6d;
+  --primary-hover: #ff758f;
+  --bg-gradient: linear-gradient(135deg, #fff0f5 0%, #ffe6eb 100%);
+  --text-dark: #2b2d42;
+  --card-bg: #ffffff;
+  --shadow: 0 10px 25px rgba(255, 77, 109, 0.15);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg-gradient);
+  color: var(--text-dark);
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Background Animated Canvas */
+#canvas-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Navigation Bar */
+.navbar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.logo {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.8rem;
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-dark);
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--primary);
+}
+
+.btn-icon {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 0.2s;
+}
+
+.btn-icon:hover {
+  transform: scale(1.05);
+}
+
+/* Sections Global */
+.section {
+  padding: 5rem 8%;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.alt-bg {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.section-title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 3rem;
+}
+
+/* Hero Section */
+.hero-section {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  padding: 2rem;
+}
+
+.hero-img-container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 1.5rem;
+}
+
+.hero-img-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid var(--primary);
+  box-shadow: var(--shadow);
+}
+
+.upload-badge {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  background: var(--primary);
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 6px 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.file-input {
+  display: none;
+}
+
+.glow-text {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3.5rem;
+  color: var(--primary);
+}
+
+/* Countdown Timer */
+.countdown-container {
+  margin-top: 2rem;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: var(--shadow);
+  display: inline-block;
+}
+
+.countdown {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.time-box span {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--primary);
+}
+
+/* Photo Gallery Grid */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.gallery-card {
+  background: var(--card-bg);
+  padding: 1rem;
+  border-radius: 15px;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s;
+}
+
+.gallery-card:hover {
+  transform: translateY(-8px);
+}
+
+.img-wrapper {
+  position: relative;
+  height: 250px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.caption {
+  margin-top: 1rem;
+  font-style: italic;
+  font-size: 0.95rem;
+}
+
+/* Reasons Grid */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.love-card {
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: var(--shadow);
+}
+
+.card-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Birthday Cake & Candles */
+.cake-container {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0;
+}
+
+.cake {
+  width: 180px;
+  position: relative;
+}
+
+.top-layer {
+  height: 60px;
+  background: #ffb703;
+  border-radius: 10px 10px 0 0;
+  border-bottom: 4px solid #fb8500;
+}
+
+.bottom-layer {
+  height: 80px;
+  background: #ffb703;
+  border-radius: 0 0 10px 10px;
+}
+
+.candle-container {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  top: -30px;
+  width: 100%;
+}
+
+.candle {
+  width: 12px;
+  height: 30px;
+  background: #219ebc;
+  position: relative;
+  cursor: pointer;
+}
+
+.flame {
+  width: 12px;
+  height: 16px;
+  background: #ffb703;
+  border-radius: 50% 50% 20% 20%;
+  position: absolute;
+  top: -16px;
+  box-shadow: 0 0 10px #ffb703;
+  animation: flicker 0.6s infinite alternate;
+}
+
+.candle.extinguished .flame {
+  display: none;
+}
+
+@keyframes flicker {
+  from { transform: scale(1); }
+  to { transform: scale(1.15); }
+}
+
+.hidden-message {
+  display: none;
+  font-size: 1.5rem;
+  color: var(--primary);
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+/* Letter Section & Modal */
+.envelope-wrapper {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.envelope {
+  background: var(--primary);
+  color: white;
+  padding: 2rem 3rem;
+  border-radius: 15px;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s;
+}
+
+.envelope:hover {
+  transform: scale(1.05);
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 3rem;
+  border-radius: 15px;
+  max-width: 500px;
+  position: relative;
+  text-align: left;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.letter-title {
+  font-family: 'Dancing Script', cursive;
+  color: var(--primary);
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #fff;
+  font-size: 0.9rem;
+}
+/* Container & Background */
+.wish-section {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.cake-display {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 220px;
+  margin: 30px 0;
+}
+
+/* Cake Design */
+.cake {
+  position: relative;
+  width: 180px;
+}
+
+.plate {
+  width: 220px;
+  height: 12px;
+  background: #e0e0e0;
+  border-radius: 10px;
+  position: absolute;
+  bottom: -6px;
+  left: -20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.layer {
+  position: relative;
+  margin: 0 auto;
+  border-radius: 10px 10px 4px 4px;
+}
+
+.layer-bottom {
+  width: 180px;
+  height: 45px;
+  background: #ffb703; /* Golden layer */
+}
+
+.layer-middle {
+  width: 150px;
+  height: 40px;
+  background: #ff85a1; /* Pink layer */
+}
+
+.layer-top {
+  width: 120px;
+  height: 35px;
+  background: #ff4d6d; /* Deep red-pink layer */
+  border-radius: 12px 12px 4px 4px;
+}
+
+.icing {
+  width: 100%;
+  height: 12px;
+  background: #ffffff;
+  border-radius: 10px 10px 8px 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Candle Setup */
+.candles-container {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 22px;
+}
+
+.candle-item {
+  position: relative;
+  width: 10px;
+  height: 32px;
+  background: linear-gradient(to bottom, #7209b7, #4361ee);
+  border-radius: 4px;
+}
+
+/* Vibrant Flame */
+.flame {
+  position: absolute;
+  top: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 14px;
+  height: 20px;
+  background: radial-gradient(circle, #fff75e 20%, #ff9e00 60%, #ff0000 100%);
+  border-radius: 50% 50% 20% 20%;
+  box-shadow: 0 0 12px #ffb703, 0 0 25px #ff4d6d;
+  animation: flameFlicker 0.5s infinite alternate ease-in-out;
+}
+
+@keyframes flameFlicker {
+  0% { transform: translateX(-50%) scale(1) rotate(-2deg); }
+  100% { transform: translateX(-50%) scale(1.15) rotate(2deg); }
+}
+
+/* Smoke Effect */
+.smoke {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  background: rgba(220, 220, 220, 0.8);
+  border-radius: 50%;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.smoke.puff {
+  animation: smokeRise 1.8s ease-out forwards;
+}
+
+@keyframes smokeRise {
+  0% { opacity: 0.9; transform: translate(-50%, 0) scale(1); }
+  50% { opacity: 0.5; transform: translate(-80%, -30px) scale(3); filter: blur(2px); }
+  100% { opacity: 0; transform: translate(-40%, -60px) scale(5); filter: blur(4px); }
+}
+
+/* Sparkles Effect */
+.sparkles {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  pointer-events: none;
+}
+
+.sparkles span {
+  position: absolute;
+  font-size: 1.2rem;
+  animation: floatSparkle 1.5s ease-out forwards;
+}
+
+.sparkles span:nth-child(1) { left: -15px; animation-delay: 0.1s; }
+.sparkles span:nth-child(2) { right: -15px; animation-delay: 0.3s; }
+
+@keyframes floatSparkle {
+  0% { opacity: 1; transform: translateY(0) scale(0.5); }
+  100% { opacity: 0; transform: translateY(-45px) scale(1.4); }
+}
+
+/* Glow Button Styling */
+.glow-btn {
+  background: linear-gradient(135deg, #ff4d6d, #ff758f);
+  color: white;
+  border: none;
+  padding: 14px 32px;
+  font-size: 1.15rem;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(255, 77, 109, 0.4);
+  transition: all 0.3s ease;
+}
+
+.glow-btn:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 10px 25px rgba(255, 77, 109, 0.6);
+}
+
+/* Result Wish Card */
+.wish-card {
+  background: #fff0f3;
+  border: 2px solid #ff4d6d;
+  border-radius: 15px;
+  padding: 20px;
+  max-width: 450px;
+  margin: 20px auto 0 auto;
+  box-shadow: 0 8px 25px rgba(255, 77, 109, 0.15);
+  animation: popIn 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.wish-card h3 {
+  color: #ff4d6d;
+  margin-bottom: 8px;
+}
+
+@keyframes popIn {
+  0% { opacity: 0; transform: scale(0.8); }
+  100% { opacity: 1; transform: scale(1); }
+}
